@@ -1,0 +1,18 @@
+sudo xbps-install -Su nano git wget 
+sudo nano /etc/sudoers
+sudo xbps-install -Su
+sudo xbps-install -Su xbps
+sudo xbps-install -Su pulseaudio alsa-plugins-pulseaudio apulse pavucontrol pamixer 
+bluez-alsa nautilus papirus-icon-theme xfce4-panel-appmenu xfce4-whiskermenu-plugin 
+mkdir void-rice
+cd void-rice 
+cd ~/
+mkdir ~/.themes
+cp /home/joshua/void-rice/Qogir-Dark ~/.themes
+cd Downloads
+ls
+chmod +x xdeb
+wget https://github.com/brave/brave-browser/releases/download/v1.42.29/brave-browser-nightly_1.42.29_amd64.deb
+./xdeb -Sde v1.42.29/brave-browser-nightly_1.42.29_amd64.deb
+sudo xbps-install -R binpkgs brave-browser-nightly-1.42.29_1
+
